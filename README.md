@@ -1,143 +1,117 @@
-<div align="center">
-
 # 🚀 CodePad
 
-### *A Modern Multi-Language Code Editor & Execution Platform*
+A modern, open-source **multi-language online code editor & execution platform** built with **Next.js, TypeScript, and Tailwind CSS**.
 
-[![Next.js](https://img.shields.io/badge/Next.js-15.3.3-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-[![Vercel](https://img.shields.io/badge/Deploy-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
+Write • Execute • Learn — all in one clean, fast, and mobile-friendly interface.
 
-**Write • Execute • Learn** - All in one beautiful interface
+🔗 **Live Demo:** [Click Me](https://codepad-j320.onrender.com)
 
-[🌐 Live Demo](https://your-codepad.vercel.app) • [📖 Documentation](./DEPLOYMENT.md) • [🐛 Report Bug](https://github.com/aman179102/CodePad/issues)
+📖 **Documentation:** See files inside the repo
 
-</div>
+🐛 **Report Issues:** GitHub Issues tab
+
 
 ---
 
-## ✨ Features
+## ✨ Key Highlights
 
-<table>
-<tr>
-<td width="50%">
+* 🖥️ Multi-language code editor & runner
+* ⚡ Real-time code execution
+* 📱 Fully responsive (desktop + mobile tabs)
+* 🤖 Smart AI-based language detection
+* 💾 Local file save & load support
+* ⚙️ Zero configuration – just open & start coding
+* 🌐 Deployable on free hosting platforms
 
-### 🎯 **Core Features**
-- 🖥️ **Multi-Language Support** - 10 programming languages
-- ⚡ **Real-time Code Execution** - Run code instantly
-- 📱 **Responsive Design** - Desktop & mobile optimized
-- 💾 **Local File Management** - Save/load code snippets
-- 🤖 **AI Language Detection** - Smart language recognition
+---
 
-</td>
-<td width="50%">
+## 🖼️ Preview
 
-### 🛠️ **Developer Experience**
-- 🎨 **Modern UI/UX** - Clean and intuitive interface
-- 📋 **Input Panel** - Interactive program input
-- 🖨️ **Console Output** - Real-time execution results
-- 📱 **Mobile Tabs** - Seamless mobile experience
-- ⚙️ **Zero Configuration** - Ready to use instantly
+> **Desktop Experience**
+> Editor + Input + Console in a single screen layout.
+ <img width="1680" height="1050" alt="Screenshot_2026-02-26_01-26-39" src="https://github.com/user-attachments/assets/da742294-2fae-4894-864a-6b4de4575239" />
 
-</td>
-</tr>
-</table>
+
+> **Mobile Experience**
+> Tab-based UI for Editor, Input, and Console — optimized for small screens.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/c05fd088-2633-4a2e-9969-5b9b42268bc9" width="250" />
+  <img src="https://github.com/user-attachments/assets/60069823-e884-46e1-8cb4-6b3f86c58fcb" width="250" />
+  <img src="https://github.com/user-attachments/assets/6a189f2e-488d-4d8a-9506-0b364b3ddef6" width="250" />
+</p>
+
+---
 
 ## 🌈 Supported Languages
 
-<div align="center">
+### Interpreted
 
-| **Interpreted** | **Compiled** | **Scripting** |
-|:---:|:---:|:---:|
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=java&logoColor=white) | ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white) |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white) | ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) | ![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white) |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) | ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white) | |
-| ![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white) | ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white) | |
-| ![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=flat-square&logo=ruby&logoColor=white) | ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?style=flat-square&logo=kotlin&logoColor=white) | |
+* JavaScript
+* TypeScript
+* Python
+* PHP
+* Ruby
+* R
 
-</div>
+### Compiled
 
-## 🚀 Quick Start
+* C
+* C++
+* Java
+* Rust
+* Kotlin
 
-### 🖥️ **Desktop Experience**
-```
-┌─────────────────┬─────────────┐
-│                 │   Input     │
-│     Editor      │─────────────│
-│                 │   Console   │
-└─────────────────┴─────────────┘
-```
+---
 
-### 📱 **Mobile Experience**
-```
-┌─────────────────────────────────┐
-│  [Editor] [Input] [Console]    │
-├─────────────────────────────────┤
-│                                 │
-│        Active Tab Content       │
-│                                 │
-└─────────────────────────────────┘
-```
+## 🤔 Why CodePad?
 
-## 🎯 How to Use
+Most online compilers:
 
-<details>
-<summary><b>📝 Writing Code</b></summary>
+* Require signup ❌
+* Break on mobile ❌
+* Are slow or bloated ❌
 
-1. **Select Language** - Choose from 14 supported languages
-2. **Write Code** - Use the full-featured editor with syntax highlighting
-3. **Add Input** - Provide program input in the dedicated input panel
-4. **Execute** - Click the Run button to execute your code
-5. **View Results** - See output in the console panel
+**CodePad is different:**
 
-</details>
+* ✅ No login required
+* 🚀 Fast execution on free infrastructure
+* 📱 Excellent mobile UX
+* 🧠 Automatic language detection
+* ❤️ 100% open-source & beginner-friendly
 
-<details>
-<summary><b>💾 File Management</b></summary>
-
-- **New File** - Start fresh with language-specific templates
-- **Save File** - Store code snippets locally with custom names
-- **Open File** - Load previously saved code snippets
-- **Auto-save** - Your work is preserved automatically
-
-</details>
-
-<details>
-<summary><b>🤖 AI Features</b></summary>
-
-- **Language Detection** - AI automatically identifies programming language
-- **Smart Templates** - Language-specific code snippets
-- **Error Handling** - Intelligent error messages and suggestions
-
-</details>
+---
 
 ## 🛠️ Tech Stack
 
-<div align="center">
+### Frontend
 
-### **Frontend**
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
 
-### **Backend**
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+### Backend & Runtime
 
-### **AI & Tools**
-![Genkit](https://img.shields.io/badge/Genkit-4285F4?style=for-the-badge&logo=google&logoColor=white)
-![ShadCN/UI](https://img.shields.io/badge/ShadCN/UI-000000?style=for-the-badge&logo=shadcnui&logoColor=white)
+* Node.js
+* Vercel-compatible execution
 
-</div>
+### AI & UI Tools
 
-## 📦 Installation & Deployment
+* Genkit
+* shadcn/ui
 
-### **Local Development**
+---
+
+## 🚀 Quick Start
+
+### Local Development
+
 ```bash
 # Clone the repository
 git clone https://github.com/aman179102/CodePad.git
+
+# Go to project directory
+cd CodePad
 
 # Install dependencies
 npm install
@@ -146,45 +120,97 @@ npm install
 npm run dev
 ```
 
-### **Deploy to Vercel (Free)**
-```bash
-# Build for production
-npm run build
-
-# Deploy to Vercel
-npx vercel --prod
-```
-
-> 📖 **Detailed deployment guide**: [DEPLOYMENT.md](./DEPLOYMENT.md)
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-- 🐛 **Report Bugs** - Found an issue? Let us know!
-- 💡 **Suggest Features** - Have ideas? We'd love to hear them!
-- 🔧 **Submit PRs** - Code contributions are always welcome!
-- 📖 **Improve Docs** - Help make our documentation better!
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **ShadCN/UI** for beautiful components
-- **Vercel** for amazing deployment platform
-- **Next.js** team for the incredible framework
-- **Open Source Community** for inspiration and tools
+Open `http://localhost:3000` in your browser.
 
 ---
 
-<div align="center">
+## 📦 Deployment
 
-### 🌟 **Star this repo if you found it helpful!** 🌟
+CodePad is designed to run on **free hosting platforms**.
 
-**Made with ❤️ by [Aman Kumar](https://github.com/aman179102)**
+### Deploy on Vercel (Free)
 
-[⬆ Back to Top](#-codepad)
+```bash
+npm run build
+npx vercel --prod
+```
 
-</div>
+📄 Detailed guides:
+
+* `DEPLOYMENT.md`
+* `LIFETIME_FREE_DEPLOYMENT.md`
+* `KEEP_ALIVE_GUIDE.md`
+
+---
+
+## 🧠 AI Features
+
+* Automatic programming language detection
+* Smart handling of editor content
+* Designed to be extensible for future AI features
+
+---
+
+## 🤝 Contributing
+
+Contributions are **very welcome** 🙌
+
+How to contribute:
+
+1. Fork the repository
+2. Create a new branch
+3. Make your changes
+4. Open a Pull Request 🚀
+
+Look for issues labeled **good first issue** if you’re new to open source.
+
+---
+
+## 🐛 Reporting Bugs
+
+Found a bug?
+
+* Open an issue with clear steps to reproduce
+* Include screenshots or logs if possible
+
+---
+
+## 💡 Feature Requests
+
+Have an idea?
+
+* Open a feature request issue
+* Explain the use-case clearly
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+You are free to use, modify, and distribute this project.
+
+---
+
+## 🙏 Acknowledgments
+
+* shadcn/ui for clean UI components
+* Vercel for amazing deployment support
+* Next.js team for the framework
+* Open-source community ❤️
+
+---
+
+## 🌟 Support the Project
+
+If you find CodePad useful:
+
+* ⭐ Star this repository
+* 🍴 Fork it
+* 🧑‍💻 Share it with other developers
+
+Made with ❤️ by **Aman Kumar**
+
+---
+
+⬆ Back to Top
