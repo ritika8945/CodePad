@@ -154,15 +154,40 @@ export default function Home() {
           "go", "rust", "php", "ruby", "kotlin", "r", "bash"
         ];
         
-        // Handle common language variations
-        let normalizedLang = detectedLang;
-        if (detectedLang === "js") normalizedLang = "javascript";
-        if (detectedLang === "ts") normalizedLang = "typescript";
-        if (detectedLang === "py") normalizedLang = "python";
-        if (detectedLang === "cpp" || detectedLang === "cxx") normalizedLang = "c++";
-        if (detectedLang === "csharp") normalizedLang = "c#";
-        if (detectedLang === "golang") normalizedLang = "go";
-        if (detectedLang === "shell" || detectedLang === "sh") normalizedLang = "bash";
+        // Handle common language variations and abbreviations
+        const abbreviationMap: Record<string, string> = {
+          // JavaScript
+          js: "javascript", jsx: "javascript", node: "javascript", nodejs: "javascript",
+          ecmascript: "javascript", es6: "javascript", es2015: "javascript",
+          // TypeScript
+          ts: "typescript", tsx: "typescript",
+          // Python
+          py: "python", python3: "python", py3: "python", pypy: "python",
+          // Java
+          jav: "java",
+          // C
+          "c-lang": "c",
+          // C++
+          cpp: "c++", cxx: "c++", cplusplus: "c++", "c-plus-plus": "c++", cc: "c++",
+          // C#
+          csharp: "c#", cs: "c#", "c-sharp": "c#", dotnet: "c#",
+          // Go
+          golang: "go",
+          // Rust
+          rs: "rust", rustlang: "rust",
+          // PHP
+          php7: "php", php8: "php",
+          // Ruby
+          rb: "ruby",
+          // Kotlin
+          kt: "kotlin", kts: "kotlin", kotlinscript: "kotlin",
+          // R
+          rlang: "r", "r-lang": "r", rscript: "r",
+          // Bash
+          shell: "bash", sh: "bash", zsh: "bash", ksh: "bash", shellscript: "bash",
+          "shell-script": "bash", "bash-script": "bash",
+        };
+        let normalizedLang = abbreviationMap[detectedLang] || detectedLang;
         
         if(supportedLangs.includes(normalizedLang)) {
           setLanguage(normalizedLang);
