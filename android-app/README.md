@@ -51,15 +51,44 @@ A lightweight, highly optimized native Android app for **CodePad** — the multi
 - **Kotlin Coroutines** for async operations
 - **MVVM** architecture with StateFlow
 
-## Build
+## Build from Terminal (No Android Studio Needed)
+
+Just run one command — the script handles everything (Java check, Android SDK download, Gradle setup):
 
 ```bash
 cd android-app
 
-# Debug build
-./gradlew assembleDebug
+# Build debug APK
+./build_apk.sh
 
-# Release build
+# Build release APK
+./build_apk.sh release
+
+# Clean build artifacts
+./build_apk.sh clean
+```
+
+**What the script does automatically:**
+1. Checks Java 17+ is installed
+2. Downloads Android SDK command-line tools (~150 MB, first run only)
+3. Installs required SDK packages (platform, build-tools)
+4. Downloads and sets up Gradle wrapper
+5. Builds the APK
+
+**Output:** The APK will be at:
+- Debug: `app/build/outputs/apk/debug/app-debug.apk`
+- Release: `app/build/outputs/apk/release/app-release-unsigned.apk`
+
+**Install on device:**
+```bash
+adb install app/build/outputs/apk/debug/app-debug.apk
+```
+
+### Build with Android Studio (Alternative)
+
+```bash
+# Open android-app/ folder in Android Studio, then:
+./gradlew assembleDebug
 ./gradlew assembleRelease
 ```
 
@@ -92,6 +121,12 @@ app/src/main/java/com/codepad/app/
 
 ## Requirements
 
+**Terminal build (build_apk.sh):**
+- JDK 17+ (`sudo apt install openjdk-17-jdk` / `brew install openjdk@17`)
+- Internet connection (first run downloads Android SDK + Gradle)
+- Linux, macOS, or WSL2
+
+**Android Studio build:**
 - Android Studio Hedgehog or later
 - JDK 17
 - Android SDK 35
